@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.logo-text {
+    color: #f49d25;
+}
+
+.hero-title {
+    color: #f49d25;
+}
+
+.btn-primary {
+    background-color: #f49d25;
+    color: white;
+    border: 2px solid #f49d25;
+}
+
+.btn-primary:hover {
+    background-color: #dd8c1e;
+    border-color: #dd8c1e;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #1c160d;
+    border: 2px solid #f4eee7;
+}
+
+.btn-secondary:hover {
+    border-color: #f49d25;
+    color: #f49d25;
+}
+
+.floating-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.hero-description {
+    color: rgba(28, 22, 13, 0.6);
+}

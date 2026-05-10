@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitUp</title>
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-background-light text-[#1c160d] font-display antialiased overflow-x-hidden transition-colors duration-300">
+    <div class="relative flex min-h-screen flex-col">
+
+        <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-background-light/80 border-b border-[#f4eee7] px-4 sm:px-10 py-3">
+
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-3 cursor-pointer">
+
+                    <div class="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#f49d25" viewBox="0 -960 960 960" class="w-5 h-5">
+                            <path d="M160-80v-720q0-33 23.5-56.5T240-880h400q33 0 56.5 23.5T720-800v720l-80-40-80 40-80-40-80 40-80-40-80 40Zm80-121 80-40 80 40 80-40 80 40v-599H240v599Zm0 0v-599 599Zm120-79h160v-80H360v80Zm0-120h160v-80H360v80Zm-80-120h320v-80H280v80Z"/>
+                        </svg>
+                    </div>
+
+                    <h2 class="logo-text text-xl font-bold tracking-tight">
+                        SplitUp
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Hero Section -->
+        <main class="flex-1 flex-col items-center justify-center relative overflow-hidden">
+            <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute bottom-[10%] right-[-5%] w-[400px] h-[400px] bg-green-200/30 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute top-[40%] left-[60%] w-[300px] h-[300px] bg-purple-200/30 rounded-full blur-3xl -z-10"></div>
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-10 py-12 lg:py-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Text -->
+                    <div class="flex flex-col gap-6 text-center lg:text-left order-2 lg:order-1">
+                        <div class="space-y-4">
+                            <span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                                New Way to Split
+                            </span>
+
+                            <h1 class="hero-title text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                                SplitUp
+                            </h1>
+
+                            <h2 class="text-2xl sm:text-3xl font-bold leading-snug text-[#1c160d]/80">
+                                Solusi mudah untuk
+                                <span class="text-primary underline decoration-wavy underline-offset-4">
+                                    split bill
+                                </span>
+                                & patungan.
+                            </h2>
+
+                            <p class="text-lg text-[#1c160d]/60 leading-relaxed max-w-xl">
+                                Website ini membantu membagi tagihan makan dengan teman secara adil, cepat, dan tanpa ribet. Gak ada lagi awkward moment saat harus menghitung siapa bayar berapa. Cukup input total tagihan, jumlah makanan dan pilih berapa orang!
+                            </p>
+
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <button id="btn-split" class="btn-primary h-14 px-8 bg-white border-2 border-[#f4eee7] rounded-xl font-bold hover:border-primary transition-all hover:-translate-y-1">
+                                Split Bill
+                            </button>
+                        
+                            <button id="btn-patungan" class="btn-secondary h-14 px-8 bg-white border-2 border-[#f4eee7] rounded-xl font-bold hover:border-primary transition-all hover:-translate-y-1">
+                                Patungan
+                            </button>
+
+                        </div>                  
+                    </div>
+
+                    <!-- HERO IMAGE -->
+                    <div class="relative order-1 lg:order-2 flex justify-center">
+                    
+                        <div class="relative w-full max-w-md aspect-square">
+                        
+                            <!-- Background -->
+                            <div class="absolute inset-0 bg-primary/10 rounded-[2rem] rotate-3 scale-105"></div>
+                        
+                            <!-- Card -->
+                            <div class="absolute inset-0 bg-white rounded-[2rem] shadow-2xl border border-[#f4eee7] dark:border-white/10 overflow-hidden p-8 -rotate-2 hover:rotate-0 transition-all duration-500">
+                            
+                                <!-- IMAGE -->
+                                <div class="w-full h-full bg-contain bg-center bg-no-repeat"
+                                    style="background-image: url('assets/images/hero.png');">
+                                </div>
+                            
+                                <!-- FLOATING CARD -->
+                                <div class="absolute top-6 right-6 bg-white p-3 rounded-xl shadow-lg animate-bounce-slow">
+                                
+                                    <div class="flex items-center gap-2">
+                                    
+                                        <div class="size-2 bg-orange-500 rounded-full"></div>
+                                    
+                                        <span class="text-xs font-bold">
+                                            Patungan
+                                        </span>
+                                    
+                            </div>
+                                
+                                </div>
+                            
+                                <!-- FLOATING CARD -->
+                                <div class="absolute bottom-8 left-8 bg-white p-3 rounded-xl shadow-lg animate-bounce-slow">
+                                
+                                    <div class="flex items-center gap-2">
+                                    
+                                        <div class="size-2 bg-primary rounded-full"></div>
+                                    
+                                        <span class="text-xs font-bold">
+                                            Split Bill
+                                        </span>                                    
+                                    </div>                                
+                                </div>                            
+                            </div>                        
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-200/60">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">
+                © 2025 SplitUp — Built by Rodiyah Maulita
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

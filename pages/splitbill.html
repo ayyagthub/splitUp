@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>SplitUp - Split Bill</title>
+
+    <!-- FONT -->
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/splitbill.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <div class="logo-box">💸</div>
+                </div>
+
+                <h2 class="logo-text">
+                    SplitUp
+                </h2>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- INTRO -->
+        <section class="intro">
+            <div>
+                <h2>Split Bill 💸</h2>
+                <p>Easily split expenses with your friends, hassle-free.</p>
+            </div>
+
+            <span class="badge">Active Session</span>
+        </section>
+
+        <!-- STEP 1 -->
+        <section class="card">
+
+            <div class="step-title">
+                <div class="step-number">1</div>
+                <h3>Basic Info</h3>
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Jumlah Orang</label>
+                    <input type="number" id="personCount" value="4">
+                </div>
+
+                <div class="input-group">
+                    <label>Jumlah Pesanan</label>
+                    <input type="number" id="orderCount" value="3">
+                </div>
+
+                <button class="btn" id="generateBtn">
+                    Tampilkan
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- STEP 2 -->
+        <section class="card">
+            <div class="step-title">
+                <div class="step-number">2</div>
+                <h3>Order Details</h3>
+            </div>
+
+            <div class="table-head">
+                <span>Item</span>
+                <span>Harga</span>
+                <span>Qty</span>
+                <span>Total</span>
+            </div>
+            
+            <div id="orderContainer"></div>
+            <div class="total-area">
+                <div>
+                    <small>Total Bill</small>
+                    <h2 id="grandTotal">Rp 0</h2>
+                </div>
+                
+                <button class="btn dark">
+                    Hitung Total
+                </button>
+            </div>
+        </section>
+        
+        <!-- GRID -->
+        <div class="grid-layout">
+
+            <!-- ASSIGN -->
+            <section class="card">
+            
+                <div class="step-title">
+                    <div class="step-number">3</div>
+                    <h3>Assign Items</h3>
+                </div>
+            
+                <div id="assignContainer"></div>
+            
+            </section>
+
+            <!-- SUMMARY -->
+            <aside class="summary-side">
+                <h3 class="summary-title">
+                    Summary
+                </h3>
+            
+                <div id="summaryContainer"></div>
+            </aside>
+        </div>
+
+        <div class="bottom-action">
+            <button class="reset-btn" id="resetBtn">
+                ↻ Reset
+            </button>
+            <button class="final-btn" id="backBtn">
+                Kembali ke Awal
+            </button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2026 SplitUp - Built by Rodiyah Maulita
+    </footer>
+
+</div>
+
+<script src="../js/splitbill.js"></script>
+</body>
+</html>
